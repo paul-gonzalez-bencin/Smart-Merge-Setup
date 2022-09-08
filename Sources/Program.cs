@@ -2,10 +2,21 @@
 public static class Program
 {
 	[System.STAThread]
-	public static void Main()
+	public static void Main(string[] args)
 	{
-		MainForm form = new MainForm();
-		
-		form.ShowDialog();
+		if(args.Length == 0)
+		{
+			MainForm form = new MainForm();
+			
+			form.ShowDialog();
+		}
+		else
+		{
+			foreach(string str in args)
+			{
+				System.Console.WriteLine(str);
+				System.Console.WriteLine();
+			}
+		}
 	}
 }

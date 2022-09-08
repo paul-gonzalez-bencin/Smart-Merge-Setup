@@ -1,0 +1,38 @@
+
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<Compile Include="Sources/Program.cs"/>
+		<Compile Include="Sources/MainForm.cs"/>
+		
+		<Reference Include="System">
+			<HintPath>C:/Windows/Microsoft.NET/Framework64/v4.0.30319/System.dll</HintPath>
+		</Reference>
+		
+		<Reference Include="System.Windows">
+			<HintPath>C:/Windows/Microsoft.NET/Framework64/v4.0.30319/System.Windows.dll</HintPath>
+		</Reference>
+		
+		<Reference Include="System.Drawing">
+			<HintPath>C:/Windows/Microsoft.NET/Framework64/v4.0.30319/System.Drawing.dll</HintPath>
+		</Reference>
+		
+		<Reference Include="System.ComponentModel">
+			<HintPath>C:/Windows/Microsoft.NET/Framework64/v4.0.30319/System.ComponentModel.dll</HintPath>
+		</Reference>
+		
+		<Reference Include="System.Windows.Forms">
+			<HintPath>C:/Windows/Microsoft.NET/Framework64/v4.0.30319/System.Windows.Forms.dll</HintPath>
+		</Reference>
+		
+		<Reference Include="System.Xml">
+			<HintPath>C:/Windows/Microsoft.NET/Framework64/v4.0.30319/System.Xml.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+	
+	<PropertyGroup>
+		<AssemblyName>SmartMergeSetup</AssemblyName>
+		<OutputPath>bin/</OutputPath>
+	</PropertyGroup>
+	
+	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
